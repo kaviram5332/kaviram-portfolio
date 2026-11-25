@@ -1,0 +1,145 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 3887 >>
+stream
+BT
+/F2 22 Tf
+1 0 0 1 50 750 Tm
+(KAVIRAM) Tj
+/F1 10.5 Tf
+1 0 0 1 50 732 Tm
+(AI Engineer  |  Software Developer  |  Systems & Problem Solver) Tj
+/F1 9 Tf
+1 0 0 1 50 716 Tm
+(hello@kaviram.dev   |   github.com/kaviram   |   linkedin.com/in/kaviram   |   Bengaluru, IN) Tj
+/F1 9 Tf
+1 0 0 1 50 706 Tm
+(_________________________________________________________________________________________________) Tj
+/F2 11 Tf
+1 0 0 1 50 684 Tm
+(SUMMARY) Tj
+/F1 9.5 Tf
+1 0 0 1 50 668 Tm
+(Software engineer and AI developer specializing in production LLM agents, deep learning) Tj
+/F1 9.5 Tf
+1 0 0 1 50 655 Tm
+(inference optimization, distributed backends, and high-craft web applications. Proven track) Tj
+/F1 9.5 Tf
+1 0 0 1 50 642 Tm
+(record shipping low-latency AI systems, scalable SaaS products, and winning national hackathons.) Tj
+/F2 11 Tf
+1 0 0 1 50 616 Tm
+(CORE TECHNICAL SKILLS) Tj
+/F1 9.5 Tf
+1 0 0 1 50 600 Tm
+(AI & Deep Learning:   PyTorch, Transformers, RAG, LangGraph, ONNX/TensorRT, Fine-Tuning \(LoRA\)) Tj
+/F1 9.5 Tf
+1 0 0 1 50 586 Tm
+(Languages & DSA:      Python, TypeScript, C++, SQL, Go, Graph & Dynamic Programming Optimization) Tj
+/F1 9.5 Tf
+1 0 0 1 50 572 Tm
+(Web & Product:        React, Next.js, FastAPI, Node.js, Tailwind CSS, WebGL/Canvas, PostgreSQL) Tj
+/F1 9.5 Tf
+1 0 0 1 50 558 Tm
+(Cloud & DevOps:       AWS \(ECS/Lambda/S3\), Docker, Kubernetes, GitHub Actions, Terraform, Redis) Tj
+/F2 11 Tf
+1 0 0 1 50 530 Tm
+(EXPERIENCE & MILESTONES) Tj
+/F2 10 Tf
+1 0 0 1 50 514 Tm
+(AI Systems Engineering Intern  -  NeuralScale Labs \(2025 - 2026\)) Tj
+/F1 9.2 Tf
+1 0 0 1 58 500 Tm
+(- Architected hybrid RAG + reranking pipeline reducing hallucination rate by 41% across 2M+ docs.) Tj
+/F1 9.2 Tf
+1 0 0 1 58 486 Tm
+(- Quantized transformer inference endpoints via ONNX Runtime, cutting P95 latency from 240ms to 68ms.) Tj
+/F2 10 Tf
+1 0 0 1 50 464 Tm
+(Full-Stack Software Intern  -  Velocity Cloud Systems \(2024\)) Tj
+/F1 9.2 Tf
+1 0 0 1 58 450 Tm
+(- Built real-time observability dashboard in React, TypeScript & WebSockets handling 50k events/min.) Tj
+/F1 9.2 Tf
+1 0 0 1 58 436 Tm
+(- Designed idempotent job orchestration queues with FastAPI and Redis, achieving 99.94% SLA.) Tj
+/F2 11 Tf
+1 0 0 1 50 408 Tm
+(FEATURED PROJECTS) Tj
+/F2 10 Tf
+1 0 0 1 50 392 Tm
+(1. AegisFlow - Autonomous Multi-Agent Code & Incident Triage Engine) Tj
+/F1 9 Tf
+1 0 0 1 54 378 Tm
+(   Stack: Python, PyTorch, LangGraph, FastAPI, React, Docker, pgvector) Tj
+/F1 9.2 Tf
+1 0 0 1 54 364 Tm
+(   Outcome: Cut simulated root-cause triage time by 63% with deterministic tool-use verification.) Tj
+/F2 10 Tf
+1 0 0 1 50 342 Tm
+(2. PulseVision - Real-Time Edge Anomaly & Defect Detection Pipeline) Tj
+/F1 9 Tf
+1 0 0 1 54 328 Tm
+(   Stack: PyTorch, YOLOv8, TensorRT, OpenCV, WebRTC, Kubernetes) Tj
+/F1 9.2 Tf
+1 0 0 1 54 314 Tm
+(   Outcome: Achieved 98.4% mAP at 58 FPS on edge GPUs, eliminating manual inspection bottlenecks.) Tj
+/F2 10 Tf
+1 0 0 1 50 292 Tm
+(3. ChronosDB - Semantic Vector & Time-Series Retrieval Engine) Tj
+/F1 9 Tf
+1 0 0 1 54 278 Tm
+(   Stack: Python, C++ Bindings, HNSW, FastAPI, TypeScript, Next.js) Tj
+/F1 9.2 Tf
+1 0 0 1 54 264 Tm
+(   Outcome: 4.2x faster hybrid metadata+vector queries under 10M-embedding stress benchmarks.) Tj
+/F2 11 Tf
+1 0 0 1 50 236 Tm
+(EDUCATION, CERTIFICATIONS & ACHIEVEMENTS) Tj
+/F2 9.5 Tf
+1 0 0 1 50 220 Tm
+(B.Tech in Computer Science & Artificial Intelligence  \(2022 - 2026\)  |  CGPA: 9.1 / 10.0) Tj
+/F1 9.2 Tf
+1 0 0 1 54 204 Tm
+(- Winner, National GenAI Builders Hackathon 2025 \(1st of 420+ teams\)) Tj
+/F1 9.2 Tf
+1 0 0 1 54 190 Tm
+(- ICPC Regionalist & Top 1.5% Competitive Programmer \(1900+ Peak Rating, 750+ DSA Problems\)) Tj
+/F1 9.2 Tf
+1 0 0 1 54 176 Tm
+(- AWS Certified Machine Learning - Specialty  |  DeepLearning.AI Specialization) Tj
+/F1 9.2 Tf
+1 0 0 1 54 162 Tm
+(- Open Source Contributor: 400+ GitHub stars across AI tooling and inference utilities) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000004189 00000 n 
+0000004259 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+4334
+%%EOF
