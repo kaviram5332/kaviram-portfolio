@@ -9,7 +9,6 @@ import {
   Linkedin,
   Loader2,
   Mail,
-  Phone,
   Send,
   Sparkles,
 } from 'lucide-react';
@@ -127,7 +126,7 @@ export const ContactAndFooter: React.FC = () => {
                 <p className="mt-3 text-sm sm:text-base text-zinc-400 leading-relaxed">
                   Messages submitted here go directly to{' '}
                   <span className="text-zinc-200">{PROFILE.email}</span>. You can also connect on
-                  GitHub, LinkedIn, or call directly.
+                  GitHub or LinkedIn.
                 </p>
 
                 {/* Email Copy Box */}
@@ -158,17 +157,6 @@ export const ContactAndFooter: React.FC = () => {
                       </>
                     )}
                   </button>
-                </div>
-
-                {/* Direct Phone */}
-                <div className="mt-3 rounded-2xl border border-white/10 bg-black/40 px-4 py-3 flex items-center gap-3">
-                  <Phone className="h-4 w-4 shrink-0 text-sky-400" />
-                  <a
-                    href={`tel:${PROFILE.phone.replace(/\s+/g, '')}`}
-                    className="font-mono text-xs sm:text-sm text-zinc-200 hover:text-white transition-colors"
-                  >
-                    {PROFILE.phone}
-                  </a>
                 </div>
               </div>
 
