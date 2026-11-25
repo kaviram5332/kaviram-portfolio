@@ -5,6 +5,7 @@ node_modules/
 dist/
 dist-ssr/
 *.local
+.vercel/
 
 # Cache & logs
 .vite/
@@ -18,3 +19,5 @@ Thumbs.db
 .vscode/*
 !.vscode/extensions.json
 .idea/
+
+.vercel
