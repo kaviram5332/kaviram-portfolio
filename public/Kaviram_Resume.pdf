@@ -9,117 +9,266 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 3887 >>
+<< /Length 5615 >>
 stream
 BT
-/F2 22 Tf
-1 0 0 1 50 750 Tm
-(KAVIRAM) Tj
-/F1 10.5 Tf
-1 0 0 1 50 732 Tm
-(AI Engineer  |  Software Developer  |  Systems & Problem Solver) Tj
-/F1 9 Tf
-1 0 0 1 50 716 Tm
-(hello@kaviram.dev   |   github.com/kaviram   |   linkedin.com/in/kaviram   |   Bengaluru, IN) Tj
-/F1 9 Tf
-1 0 0 1 50 706 Tm
-(_________________________________________________________________________________________________) Tj
-/F2 11 Tf
-1 0 0 1 50 684 Tm
-(SUMMARY) Tj
+0.07 0.09 0.15 rg
+/F2 20 Tf
+1 0 0 1 245 752 Tm
+(KAVIRAM R) Tj
+ET
+BT
+0.15 0.39 0.92 rg
 /F1 9.5 Tf
-1 0 0 1 50 668 Tm
-(Software engineer and AI developer specializing in production LLM agents, deep learning) Tj
-/F1 9.5 Tf
-1 0 0 1 50 655 Tm
-(inference optimization, distributed backends, and high-craft web applications. Proven track) Tj
-/F1 9.5 Tf
-1 0 0 1 50 642 Tm
-(record shipping low-latency AI systems, scalable SaaS products, and winning national hackathons.) Tj
-/F2 11 Tf
-1 0 0 1 50 616 Tm
-(CORE TECHNICAL SKILLS) Tj
-/F1 9.5 Tf
-1 0 0 1 50 600 Tm
-(AI & Deep Learning:   PyTorch, Transformers, RAG, LangGraph, ONNX/TensorRT, Fine-Tuning \(LoRA\)) Tj
-/F1 9.5 Tf
-1 0 0 1 50 586 Tm
-(Languages & DSA:      Python, TypeScript, C++, SQL, Go, Graph & Dynamic Programming Optimization) Tj
-/F1 9.5 Tf
-1 0 0 1 50 572 Tm
-(Web & Product:        React, Next.js, FastAPI, Node.js, Tailwind CSS, WebGL/Canvas, PostgreSQL) Tj
-/F1 9.5 Tf
-1 0 0 1 50 558 Tm
-(Cloud & DevOps:       AWS \(ECS/Lambda/S3\), Docker, Kubernetes, GitHub Actions, Terraform, Redis) Tj
-/F2 11 Tf
-1 0 0 1 50 530 Tm
-(EXPERIENCE & MILESTONES) Tj
+1 0 0 1 112 736 Tm
+(Software Developer  |  Full Stack Engineer  |  AI/ML Enthusiast  |  2026 B.Tech Graduate) Tj
+ET
+BT
+0.25 0.28 0.35 rg
+/F1 8.2 Tf
+1 0 0 1 56 722 Tm
+(+91 8122910564  |  kaviramkaviram21@gmail.com  |  github.com/kaviram5332  |  linkedin.com/in/kaviram  |  Chennai, TN) Tj
+ET
+0.15 0.39 0.92 RG
+0.7 w
+48 691 m
+564 691 l
+S
+BT
+0.15 0.39 0.92 rg
 /F2 10 Tf
-1 0 0 1 50 514 Tm
-(AI Systems Engineering Intern  -  NeuralScale Labs \(2025 - 2026\)) Tj
-/F1 9.2 Tf
-1 0 0 1 58 500 Tm
-(- Architected hybrid RAG + reranking pipeline reducing hallucination rate by 41% across 2M+ docs.) Tj
-/F1 9.2 Tf
-1 0 0 1 58 486 Tm
-(- Quantized transformer inference endpoints via ONNX Runtime, cutting P95 latency from 240ms to 68ms.) Tj
+1 0 0 1 48 696 Tm
+(PROFESSIONAL SUMMARY) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.8 Tf
+1 0 0 1 48 677 Tm
+(Final-year B.Tech IT student at College of Engineering, Guindy with hands-on experience engineering full-stack web) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.8 Tf
+1 0 0 1 48 665 Tm
+(applications, deep learning systems, and real-time NLP platforms. Proficient in Python, React, Node.js, REST APIs,) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.8 Tf
+1 0 0 1 48 653 Tm
+(MySQL, and PyTorch. Strong foundation in Data Structures & Algorithms \(DSA\), system design, and Agile delivery.) Tj
+ET
+0.15 0.39 0.92 RG
+0.7 w
+48 623 m
+564 623 l
+S
+BT
+0.15 0.39 0.92 rg
 /F2 10 Tf
-1 0 0 1 50 464 Tm
-(Full-Stack Software Intern  -  Velocity Cloud Systems \(2024\)) Tj
-/F1 9.2 Tf
-1 0 0 1 58 450 Tm
-(- Built real-time observability dashboard in React, TypeScript & WebSockets handling 50k events/min.) Tj
-/F1 9.2 Tf
-1 0 0 1 58 436 Tm
-(- Designed idempotent job orchestration queues with FastAPI and Redis, achieving 99.94% SLA.) Tj
-/F2 11 Tf
-1 0 0 1 50 408 Tm
-(FEATURED PROJECTS) Tj
+1 0 0 1 48 628 Tm
+(TECHNICAL SKILLS) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.8 Tf
+1 0 0 1 48 609 Tm
+(Frontend:    HTML5, CSS3, JavaScript \(ES6+\), React.js, Responsive Design, Full Stack Development) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.8 Tf
+1 0 0 1 48 596 Tm
+(Backend:     Node.js, Python, Java, FastAPI, REST APIs, API Integration, Backend Development) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.8 Tf
+1 0 0 1 48 583 Tm
+(AI / ML:     PyTorch, Deep Learning, Computer Vision, NLP, Machine Learning, Sentiment Analysis) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.8 Tf
+1 0 0 1 48 570 Tm
+(Database:    MySQL, SQL, Relational Databases, Basic NoSQL) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.8 Tf
+1 0 0 1 48 557 Tm
+(Dev Tools:   Git, GitHub, VS Code, Postman, Agile Methodology, Debugging, Problem Solving) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.8 Tf
+1 0 0 1 48 544 Tm
+(Core CS:     Data Structures and Algorithms \(DSA\), System Design, OOP, OS, DBMS) Tj
+ET
+0.15 0.39 0.92 RG
+0.7 w
+48 513 m
+564 513 l
+S
+BT
+0.15 0.39 0.92 rg
 /F2 10 Tf
-1 0 0 1 50 392 Tm
-(1. AegisFlow - Autonomous Multi-Agent Code & Incident Triage Engine) Tj
-/F1 9 Tf
-1 0 0 1 54 378 Tm
-(   Stack: Python, PyTorch, LangGraph, FastAPI, React, Docker, pgvector) Tj
-/F1 9.2 Tf
-1 0 0 1 54 364 Tm
-(   Outcome: Cut simulated root-cause triage time by 63% with deterministic tool-use verification.) Tj
-/F2 10 Tf
-1 0 0 1 50 342 Tm
-(2. PulseVision - Real-Time Edge Anomaly & Defect Detection Pipeline) Tj
-/F1 9 Tf
-1 0 0 1 54 328 Tm
-(   Stack: PyTorch, YOLOv8, TensorRT, OpenCV, WebRTC, Kubernetes) Tj
-/F1 9.2 Tf
-1 0 0 1 54 314 Tm
-(   Outcome: Achieved 98.4% mAP at 58 FPS on edge GPUs, eliminating manual inspection bottlenecks.) Tj
-/F2 10 Tf
-1 0 0 1 50 292 Tm
-(3. ChronosDB - Semantic Vector & Time-Series Retrieval Engine) Tj
-/F1 9 Tf
-1 0 0 1 54 278 Tm
-(   Stack: Python, C++ Bindings, HNSW, FastAPI, TypeScript, Next.js) Tj
-/F1 9.2 Tf
-1 0 0 1 54 264 Tm
-(   Outcome: 4.2x faster hybrid metadata+vector queries under 10M-embedding stress benchmarks.) Tj
-/F2 11 Tf
-1 0 0 1 50 236 Tm
-(EDUCATION, CERTIFICATIONS & ACHIEVEMENTS) Tj
+1 0 0 1 48 518 Tm
+(PROJECTS) Tj
+ET
+BT
+0.12 0.14 0.18 rg
 /F2 9.5 Tf
-1 0 0 1 50 220 Tm
-(B.Tech in Computer Science & Artificial Intelligence  \(2022 - 2026\)  |  CGPA: 9.1 / 10.0) Tj
-/F1 9.2 Tf
-1 0 0 1 54 204 Tm
-(- Winner, National GenAI Builders Hackathon 2025 \(1st of 420+ teams\)) Tj
-/F1 9.2 Tf
-1 0 0 1 54 190 Tm
-(- ICPC Regionalist & Top 1.5% Competitive Programmer \(1900+ Peak Rating, 750+ DSA Problems\)) Tj
-/F1 9.2 Tf
-1 0 0 1 54 176 Tm
-(- AWS Certified Machine Learning - Specialty  |  DeepLearning.AI Specialization) Tj
-/F1 9.2 Tf
-1 0 0 1 54 162 Tm
-(- Open Source Contributor: 400+ GitHub stars across AI tooling and inference utilities) Tj
+1 0 0 1 48 499 Tm
+(Real-Time Deepfake Detection & Face Restoration Framework) Tj
+ET
+BT
+0.15 0.39 0.92 rg
+/F1 8.4 Tf
+1 0 0 1 48 487 Tm
+(Python, PyTorch, Computer Vision, Deep Learning  |  github.com/kaviram5332) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.6 Tf
+1 0 0 1 54 474 Tm
+(- Developed a multi-task deep learning framework \(MDL-Net\) detecting deepfake images and videos using spatial,) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.6 Tf
+1 0 0 1 54 462 Tm
+(  temporal, and frequency-based forensic analysis - achieving improved classification accuracy and interpretability.) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.6 Tf
+1 0 0 1 54 450 Tm
+(- Implemented RGAM and FLM modules for pixel-level manipulation localization; designed TFCA for frame-level) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.6 Tf
+1 0 0 1 54 438 Tm
+(  inconsistency detection, and built a face restoration pipeline using ArcFace, FAISS, and RestoreFormer.) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F2 9.5 Tf
+1 0 0 1 48 416 Tm
+(Real-Time Harassment Detection System \(NLP\)) Tj
+ET
+BT
+0.15 0.39 0.92 rg
+/F1 8.4 Tf
+1 0 0 1 48 404 Tm
+(Python, NLP Libraries, Machine Learning, REST API  |  github.com/kaviram5332) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.6 Tf
+1 0 0 1 54 391 Tm
+(- Constructed a high-throughput NLP pipeline for real-time abusive text detection using ML classification models;) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.6 Tf
+1 0 0 1 54 379 Tm
+(  integrated graph-based severity dashboards for escalation pattern recognition with high precision.) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.6 Tf
+1 0 0 1 54 367 Tm
+(- Delivered a secure REST API with sentiment-based classification for instant reporting at minimal latency.) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F2 9.5 Tf
+1 0 0 1 48 345 Tm
+(Academic Project Evaluation System) Tj
+ET
+BT
+0.15 0.39 0.92 rg
+/F1 8.4 Tf
+1 0 0 1 48 333 Tm
+(HTML5, CSS3, JavaScript, MySQL  |  github.com/kaviram5332) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.6 Tf
+1 0 0 1 54 320 Tm
+(- Architected a scalable multi-role web platform with role-based access control and 15+ automated workflow) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.6 Tf
+1 0 0 1 54 308 Tm
+(  modules - cutting manual processing time by 40% through real-time tracking and efficient data pipelines.) Tj
+ET
+0.15 0.39 0.92 RG
+0.7 w
+48 275 m
+564 275 l
+S
+BT
+0.15 0.39 0.92 rg
+/F2 10 Tf
+1 0 0 1 48 280 Tm
+(EDUCATION) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F2 8.8 Tf
+1 0 0 1 48 260 Tm
+(B.Tech - IT  |  College of Engineering, Guindy \(Anna University\)  |  2022 - 2026  |  CGPA: 7.0) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.8 Tf
+1 0 0 1 48 246 Tm
+(Diploma - IT  |  Govt. Polytechnic College, Purasaiwalkam  |  2018 - 2021  |  89%) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.8 Tf
+1 0 0 1 48 232 Tm
+(SSLC \(10th\)  |  Govt. High School, Veppampattu  |  2018  |  75.3%) Tj
+ET
+0.15 0.39 0.92 RG
+0.7 w
+48 199 m
+564 199 l
+S
+BT
+0.15 0.39 0.92 rg
+/F2 10 Tf
+1 0 0 1 48 204 Tm
+(CERTIFICATIONS & ACHIEVEMENTS) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.8 Tf
+1 0 0 1 52 184 Tm
+(- Full Stack Web Development - Novitech   |   Machine Learning - Novitech) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.8 Tf
+1 0 0 1 52 170 Tm
+(- Shipped 3+ real-world software systems independently - achieving 40% processing time reduction and 50+ bugs fixed.) Tj
+ET
+BT
+0.12 0.14 0.18 rg
+/F1 8.8 Tf
+1 0 0 1 52 156 Tm
+(- Core strengths: Full Stack Development, Deep Learning, API Integration, System Design, DSA, Agile, Version Control.) Tj
+ET
+BT
+0.4 0.45 0.52 rg
+/F1 8.2 Tf
+1 0 0 1 162 112 Tm
+(Eligible: 2026 Batch  |  B.Tech IT - College of Engineering, Guindy  |  Chennai) Tj
 ET
 endstream
 endobj
@@ -136,10 +285,10 @@ xref
 0000000058 00000 n 
 0000000115 00000 n 
 0000000251 00000 n 
-0000004189 00000 n 
-0000004259 00000 n 
+0000005917 00000 n 
+0000005987 00000 n 
 trailer
 << /Size 7 /Root 1 0 R >>
 startxref
-4334
+6062
 %%EOF

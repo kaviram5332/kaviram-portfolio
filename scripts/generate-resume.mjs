@@ -1,64 +1,77 @@
-// Pure Node.js PDF 1.4 generator for Kaviram's Resume (no external dependencies required)
+// Pure Node.js PDF 1.4 generator matching Kaviram R's authentic 1-page resume
 import fs from 'node:fs';
 import path from 'node:path';
 
 const lines = [
-  { text: 'KAVIRAM', size: 22, bold: true, y: 750, x: 50 },
-  { text: 'AI Engineer  |  Software Developer  |  Systems & Problem Solver', size: 10.5, bold: false, y: 732, x: 50 },
-  { text: 'hello@kaviram.dev   |   github.com/kaviram   |   linkedin.com/in/kaviram   |   Bengaluru, IN', size: 9, bold: false, y: 716, x: 50 },
-  { text: '_________________________________________________________________________________________________', size: 9, bold: false, y: 706, x: 50 },
+  // Header
+  { text: 'KAVIRAM R', size: 20, bold: true, y: 752, x: 245, color: '0.07 0.09 0.15' },
+  { text: 'Software Developer  |  Full Stack Engineer  |  AI/ML Enthusiast  |  2026 B.Tech Graduate', size: 9.5, bold: false, y: 736, x: 112, color: '0.15 0.39 0.92' },
+  { text: '+91 8122910564  |  kaviramkaviram21@gmail.com  |  github.com/kaviram5332  |  linkedin.com/in/kaviram  |  Chennai, TN', size: 8.2, bold: false, y: 722, x: 56, color: '0.25 0.28 0.35' },
 
-  { text: 'SUMMARY', size: 11, bold: true, y: 684, x: 50 },
-  { text: 'Software engineer and AI developer specializing in production LLM agents, deep learning', size: 9.5, bold: false, y: 668, x: 50 },
-  { text: 'inference optimization, distributed backends, and high-craft web applications. Proven track', size: 9.5, bold: false, y: 655, x: 50 },
-  { text: 'record shipping low-latency AI systems, scalable SaaS products, and winning national hackathons.', size: 9.5, bold: false, y: 642, x: 50 },
+  // Professional Summary
+  { text: 'PROFESSIONAL SUMMARY', size: 10, bold: true, y: 696, x: 48, color: '0.15 0.39 0.92', ruleY: 691 },
+  { text: 'Final-year B.Tech IT student at College of Engineering, Guindy with hands-on experience engineering full-stack web', size: 8.8, bold: false, y: 677, x: 48 },
+  { text: 'applications, deep learning systems, and real-time NLP platforms. Proficient in Python, React, Node.js, REST APIs,', size: 8.8, bold: false, y: 665, x: 48 },
+  { text: 'MySQL, and PyTorch. Strong foundation in Data Structures & Algorithms (DSA), system design, and Agile delivery.', size: 8.8, bold: false, y: 653, x: 48 },
 
-  { text: 'CORE TECHNICAL SKILLS', size: 11, bold: true, y: 616, x: 50 },
-  { text: 'AI & Deep Learning:   PyTorch, Transformers, RAG, LangGraph, ONNX/TensorRT, Fine-Tuning (LoRA)', size: 9.5, bold: false, y: 600, x: 50 },
-  { text: 'Languages & DSA:      Python, TypeScript, C++, SQL, Go, Graph & Dynamic Programming Optimization', size: 9.5, bold: false, y: 586, x: 50 },
-  { text: 'Web & Product:        React, Next.js, FastAPI, Node.js, Tailwind CSS, WebGL/Canvas, PostgreSQL', size: 9.5, bold: false, y: 572, x: 50 },
-  { text: 'Cloud & DevOps:       AWS (ECS/Lambda/S3), Docker, Kubernetes, GitHub Actions, Terraform, Redis', size: 9.5, bold: false, y: 558, x: 50 },
+  // Technical Skills
+  { text: 'TECHNICAL SKILLS', size: 10, bold: true, y: 628, x: 48, color: '0.15 0.39 0.92', ruleY: 623 },
+  { text: 'Frontend:    HTML5, CSS3, JavaScript (ES6+), React.js, Responsive Design, Full Stack Development', size: 8.8, bold: false, y: 609, x: 48 },
+  { text: 'Backend:     Node.js, Python, Java, FastAPI, REST APIs, API Integration, Backend Development', size: 8.8, bold: false, y: 596, x: 48 },
+  { text: 'AI / ML:     PyTorch, Deep Learning, Computer Vision, NLP, Machine Learning, Sentiment Analysis', size: 8.8, bold: false, y: 583, x: 48 },
+  { text: 'Database:    MySQL, SQL, Relational Databases, Basic NoSQL', size: 8.8, bold: false, y: 570, x: 48 },
+  { text: 'Dev Tools:   Git, GitHub, VS Code, Postman, Agile Methodology, Debugging, Problem Solving', size: 8.8, bold: false, y: 557, x: 48 },
+  { text: 'Core CS:     Data Structures and Algorithms (DSA), System Design, OOP, OS, DBMS', size: 8.8, bold: false, y: 544, x: 48 },
 
-  { text: 'EXPERIENCE & MILESTONES', size: 11, bold: true, y: 530, x: 50 },
-  { text: 'AI Systems Engineering Intern  -  NeuralScale Labs (2025 - 2026)', size: 10, bold: true, y: 514, x: 50 },
-  { text: '- Architected hybrid RAG + reranking pipeline reducing hallucination rate by 41% across 2M+ docs.', size: 9.2, bold: false, y: 500, x: 58 },
-  { text: '- Quantized transformer inference endpoints via ONNX Runtime, cutting P95 latency from 240ms to 68ms.', size: 9.2, bold: false, y: 486, x: 58 },
+  // Projects
+  { text: 'PROJECTS', size: 10, bold: true, y: 518, x: 48, color: '0.15 0.39 0.92', ruleY: 513 },
 
-  { text: 'Full-Stack Software Intern  -  Velocity Cloud Systems (2024)', size: 10, bold: true, y: 464, x: 50 },
-  { text: '- Built real-time observability dashboard in React, TypeScript & WebSockets handling 50k events/min.', size: 9.2, bold: false, y: 450, x: 58 },
-  { text: '- Designed idempotent job orchestration queues with FastAPI and Redis, achieving 99.94% SLA.', size: 9.2, bold: false, y: 436, x: 58 },
+  { text: 'Real-Time Deepfake Detection & Face Restoration Framework', size: 9.5, bold: true, y: 499, x: 48 },
+  { text: 'Python, PyTorch, Computer Vision, Deep Learning  |  github.com/kaviram5332', size: 8.4, bold: false, y: 487, x: 48, color: '0.15 0.39 0.92' },
+  { text: '- Developed a multi-task deep learning framework (MDL-Net) detecting deepfake images and videos using spatial,', size: 8.6, bold: false, y: 474, x: 54 },
+  { text: '  temporal, and frequency-based forensic analysis - achieving improved classification accuracy and interpretability.', size: 8.6, bold: false, y: 462, x: 54 },
+  { text: '- Implemented RGAM and FLM modules for pixel-level manipulation localization; designed TFCA for frame-level', size: 8.6, bold: false, y: 450, x: 54 },
+  { text: '  inconsistency detection, and built a face restoration pipeline using ArcFace, FAISS, and RestoreFormer.', size: 8.6, bold: false, y: 438, x: 54 },
 
-  { text: 'FEATURED PROJECTS', size: 11, bold: true, y: 408, x: 50 },
-  { text: '1. AegisFlow - Autonomous Multi-Agent Code & Incident Triage Engine', size: 10, bold: true, y: 392, x: 50 },
-  { text: '   Stack: Python, PyTorch, LangGraph, FastAPI, React, Docker, pgvector', size: 9, bold: false, y: 378, x: 54 },
-  { text: '   Outcome: Cut simulated root-cause triage time by 63% with deterministic tool-use verification.', size: 9.2, bold: false, y: 364, x: 54 },
+  { text: 'Real-Time Harassment Detection System (NLP)', size: 9.5, bold: true, y: 416, x: 48 },
+  { text: 'Python, NLP Libraries, Machine Learning, REST API  |  github.com/kaviram5332', size: 8.4, bold: false, y: 404, x: 48, color: '0.15 0.39 0.92' },
+  { text: '- Constructed a high-throughput NLP pipeline for real-time abusive text detection using ML classification models;', size: 8.6, bold: false, y: 391, x: 54 },
+  { text: '  integrated graph-based severity dashboards for escalation pattern recognition with high precision.', size: 8.6, bold: false, y: 379, x: 54 },
+  { text: '- Delivered a secure REST API with sentiment-based classification for instant reporting at minimal latency.', size: 8.6, bold: false, y: 367, x: 54 },
 
-  { text: '2. PulseVision - Real-Time Edge Anomaly & Defect Detection Pipeline', size: 10, bold: true, y: 342, x: 50 },
-  { text: '   Stack: PyTorch, YOLOv8, TensorRT, OpenCV, WebRTC, Kubernetes', size: 9, bold: false, y: 328, x: 54 },
-  { text: '   Outcome: Achieved 98.4% mAP at 58 FPS on edge GPUs, eliminating manual inspection bottlenecks.', size: 9.2, bold: false, y: 314, x: 54 },
+  { text: 'Academic Project Evaluation System', size: 9.5, bold: true, y: 345, x: 48 },
+  { text: 'HTML5, CSS3, JavaScript, MySQL  |  github.com/kaviram5332', size: 8.4, bold: false, y: 333, x: 48, color: '0.15 0.39 0.92' },
+  { text: '- Architected a scalable multi-role web platform with role-based access control and 15+ automated workflow', size: 8.6, bold: false, y: 320, x: 54 },
+  { text: '  modules - cutting manual processing time by 40% through real-time tracking and efficient data pipelines.', size: 8.6, bold: false, y: 308, x: 54 },
 
-  { text: '3. ChronosDB - Semantic Vector & Time-Series Retrieval Engine', size: 10, bold: true, y: 292, x: 50 },
-  { text: '   Stack: Python, C++ Bindings, HNSW, FastAPI, TypeScript, Next.js', size: 9, bold: false, y: 278, x: 54 },
-  { text: '   Outcome: 4.2x faster hybrid metadata+vector queries under 10M-embedding stress benchmarks.', size: 9.2, bold: false, y: 264, x: 54 },
+  // Education
+  { text: 'EDUCATION', size: 10, bold: true, y: 280, x: 48, color: '0.15 0.39 0.92', ruleY: 275 },
+  { text: 'B.Tech - IT  |  College of Engineering, Guindy (Anna University)  |  2022 - 2026  |  CGPA: 7.0', size: 8.8, bold: true, y: 260, x: 48 },
+  { text: 'Diploma - IT  |  Govt. Polytechnic College, Purasaiwalkam  |  2018 - 2021  |  89%', size: 8.8, bold: false, y: 246, x: 48 },
+  { text: 'SSLC (10th)  |  Govt. High School, Veppampattu  |  2018  |  75.3%', size: 8.8, bold: false, y: 232, x: 48 },
 
-  { text: 'EDUCATION, CERTIFICATIONS & ACHIEVEMENTS', size: 11, bold: true, y: 236, x: 50 },
-  { text: 'B.Tech in Computer Science & Artificial Intelligence  (2022 - 2026)  |  CGPA: 9.1 / 10.0', size: 9.5, bold: true, y: 220, x: 50 },
-  { text: '- Winner, National GenAI Builders Hackathon 2025 (1st of 420+ teams)', size: 9.2, bold: false, y: 204, x: 54 },
-  { text: '- ICPC Regionalist & Top 1.5% Competitive Programmer (1900+ Peak Rating, 750+ DSA Problems)', size: 9.2, bold: false, y: 190, x: 54 },
-  { text: '- AWS Certified Machine Learning - Specialty  |  DeepLearning.AI Specialization', size: 9.2, bold: false, y: 176, x: 54 },
-  { text: '- Open Source Contributor: 400+ GitHub stars across AI tooling and inference utilities', size: 9.2, bold: false, y: 162, x: 54 },
+  // Certifications & Achievements
+  { text: 'CERTIFICATIONS & ACHIEVEMENTS', size: 10, bold: true, y: 204, x: 48, color: '0.15 0.39 0.92', ruleY: 199 },
+  { text: '- Full Stack Web Development - Novitech   |   Machine Learning - Novitech', size: 8.8, bold: false, y: 184, x: 52 },
+  { text: '- Shipped 3+ real-world software systems independently - achieving 40% processing time reduction and 50+ bugs fixed.', size: 8.8, bold: false, y: 170, x: 52 },
+  { text: '- Core strengths: Full Stack Development, Deep Learning, API Integration, System Design, DSA, Agile, Version Control.', size: 8.8, bold: false, y: 156, x: 52 },
+
+  { text: 'Eligible: 2026 Batch  |  B.Tech IT - College of Engineering, Guindy  |  Chennai', size: 8.2, bold: false, y: 112, x: 162, color: '0.4 0.45 0.52' },
 ];
 
 function escapePdfText(str) {
   return str.replace(/\\/g, '\\\\').replace(/\(/g, '\\(').replace(/\)/g, '\\)');
 }
 
-let stream = 'BT\n';
+let stream = '';
 for (const l of lines) {
+  if (l.ruleY) {
+    stream += `0.15 0.39 0.92 RG\n0.7 w\n48 ${l.ruleY} m\n564 ${l.ruleY} l\nS\n`;
+  }
+  const rgb = l.color ?? '0.12 0.14 0.18';
   const font = l.bold ? '/F2' : '/F1';
-  stream += `${font} ${l.size} Tf\n1 0 0 1 ${l.x} ${l.y} Tm\n(${escapePdfText(l.text)}) Tj\n`;
+  stream += `BT\n${rgb} rg\n${font} ${l.size} Tf\n1 0 0 1 ${l.x} ${l.y} Tm\n(${escapePdfText(l.text)}) Tj\nET\n`;
 }
-stream += 'ET\n';
 
 const objects = [
   '1 0 obj\n<< /Type /Catalog /Pages 2 0 R >>\nendobj\n',

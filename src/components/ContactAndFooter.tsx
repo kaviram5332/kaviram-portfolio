@@ -7,7 +7,9 @@ import {
   Download,
   Github,
   Linkedin,
+  Loader2,
   Mail,
+  Phone,
   Send,
   Sparkles,
 } from 'lucide-react';
@@ -19,7 +21,9 @@ export const ContactAndFooter: React.FC = () => {
   const [email, setEmail] = useState('');
   const [scope, setScope] = useState('Full-Stack Software Development');
   const [message, setMessage] = useState('');
+  const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
 
   const handleCopyEmail = async () => {
@@ -32,16 +36,58 @@ export const ContactAndFooter: React.FC = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const buildMailtoHref = () => {
+    const subject = encodeURIComponent(`[Portfolio Inquiry] ${scope} — from ${name || 'Visitor'}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nFocus: ${scope}\n\nMessage:\n${message}`
+    );
+    return `mailto:${PROFILE.email}?subject=${subject}&body=${body}`;
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !email.trim() || !message.trim()) return;
-    setSubmitted(true);
+
+    setSubmitting(true);
+    setErrorMsg(null);
+
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${PROFILE.email}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name: name.trim(),
+          email: email.trim(),
+          _replyto: email.trim(),
+          _subject: `Portfolio Contact: ${scope} — ${name.trim()}`,
+          focus: scope,
+          message: message.trim(),
+          _template: 'table',
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Delivery service returned an error.');
+      }
+
+      setSubmitted(true);
+    } catch {
+      setErrorMsg(
+        'Direct relay was blocked or offline. Click below to open your email app pre-addressed to Kaviram.'
+      );
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const resetForm = () => {
     setName('');
     setEmail('');
     setMessage('');
+    setErrorMsg(null);
     setSubmitted(false);
   };
 
@@ -79,17 +125,18 @@ export const ContactAndFooter: React.FC = () => {
                   Direct Signal, Zero Friction.
                 </h3>
                 <p className="mt-3 text-sm sm:text-base text-zinc-400 leading-relaxed">
-                  Reach out directly via email or connect on GitHub and LinkedIn. Average response
-                  time is under 12 hours.
+                  Messages submitted here go directly to{' '}
+                  <span className="text-zinc-200">{PROFILE.email}</span>. You can also connect on
+                  GitHub, LinkedIn, or call directly.
                 </p>
 
                 {/* Email Copy Box */}
-                <div className="mt-7 rounded-2xl border border-white/10 bg-black/40 p-4 flex items-center justify-between gap-3">
+                <div className="mt-6 rounded-2xl border border-white/10 bg-black/40 p-4 flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3 min-w-0">
                     <Mail className="h-4 w-4 shrink-0 text-rose-400" />
                     <a
                       href={`mailto:${PROFILE.email}`}
-                      className="font-mono text-sm text-white truncate hover:text-rose-300 transition-colors"
+                      className="font-mono text-xs sm:text-sm text-white truncate hover:text-rose-300 transition-colors"
                     >
                       {PROFILE.email}
                     </a>
@@ -111,6 +158,17 @@ export const ContactAndFooter: React.FC = () => {
                       </>
                     )}
                   </button>
+                </div>
+
+                {/* Direct Phone */}
+                <div className="mt-3 rounded-2xl border border-white/10 bg-black/40 px-4 py-3 flex items-center gap-3">
+                  <Phone className="h-4 w-4 shrink-0 text-sky-400" />
+                  <a
+                    href={`tel:${PROFILE.phone.replace(/\s+/g, '')}`}
+                    className="font-mono text-xs sm:text-sm text-zinc-200 hover:text-white transition-colors"
+                  >
+                    {PROFILE.phone}
+                  </a>
                 </div>
               </div>
 
@@ -162,16 +220,12 @@ export const ContactAndFooter: React.FC = () => {
                     <Sparkles className="h-6 w-6" />
                   </div>
                   <h3 className="font-display text-2xl sm:text-3xl font-bold text-white">
-                    Transmission Received.
+                    Message Sent to Kaviram.
                   </h3>
                   <p className="mt-3 max-w-md text-sm sm:text-base text-zinc-400">
-                    Thank you, <span className="text-white font-medium">{name}</span>. Your message
-                    regarding <span className="text-sky-400">{scope}</span> is queued — you can
-                    also reach me directly at{' '}
-                    <a href={`mailto:${PROFILE.email}`} className="text-rose-400 underline">
-                      {PROFILE.email}
-                    </a>
-                    .
+                    Thank you, <span className="text-white font-medium">{name}</span>. Your inquiry
+                    about <span className="text-sky-400">{scope}</span> has been forwarded to{' '}
+                    <span className="text-rose-400">{PROFILE.email}</span>.
                   </p>
                   <button
                     type="button"
@@ -258,13 +312,44 @@ export const ContactAndFooter: React.FC = () => {
                     />
                   </div>
 
-                  <button
-                    type="submit"
-                    className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-rose-500 to-rose-600 px-7 py-3.5 text-sm font-semibold text-white shadow-[0_12px_32px_-8px_rgba(244,63,94,0.65)] transition-all hover:brightness-110"
-                  >
-                    <Send className="h-4 w-4" />
-                    <span>Send Message</span>
-                  </button>
+                  {errorMsg && (
+                    <div className="rounded-xl border border-amber-400/30 bg-amber-400/10 p-3 text-xs text-amber-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                      <span>{errorMsg}</span>
+                      <a
+                        href={buildMailtoHref()}
+                        className="font-semibold underline text-white shrink-0"
+                      >
+                        Open Email App →
+                      </a>
+                    </div>
+                  )}
+
+                  <div className="flex flex-wrap items-center gap-3">
+                    <button
+                      type="submit"
+                      disabled={submitting}
+                      className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-rose-500 to-rose-600 px-7 py-3.5 text-sm font-semibold text-white shadow-[0_12px_32px_-8px_rgba(244,63,94,0.65)] transition-all hover:brightness-110 disabled:opacity-60"
+                    >
+                      {submitting ? (
+                        <>
+                          <Loader2 className="h-4 w-4 animate-spin" />
+                          <span>Sending...</span>
+                        </>
+                      ) : (
+                        <>
+                          <Send className="h-4 w-4" />
+                          <span>Send Message</span>
+                        </>
+                      )}
+                    </button>
+
+                    <a
+                      href={buildMailtoHref()}
+                      className="text-xs font-mono text-zinc-400 hover:text-white transition-colors"
+                    >
+                      or send via mail client
+                    </a>
+                  </div>
                 </form>
               )}
             </motion.div>

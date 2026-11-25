@@ -6,8 +6,8 @@ import { SectionHeader } from './SectionHeader';
 
 const TYPE_FILTERS: { id: 'all' | TimelineEntry['type']; label: string }[] = [
   { id: 'all', label: 'All Milestones' },
-  { id: 'experience', label: 'Internships & Work' },
-  { id: 'milestone', label: 'Awards & Certs' },
+  { id: 'milestone', label: 'AI & Systems' },
+  { id: 'experience', label: 'Full-Stack Builds' },
   { id: 'education', label: 'Education' },
 ];
 
